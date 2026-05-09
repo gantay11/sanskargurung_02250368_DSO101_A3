@@ -49,17 +49,6 @@ todo-app/
 - Selected **"Deploy from an existing image"** and linked DockerHub image.
 - Added `RENDER_DEPLOY_HOOK_URL` to GitHub Secrets for automated redeploy.
 
-## 📸 Screenshots
-
-###  GitHub Actions – Successful Workflow
-![GitHub Actions](screenshots/github-actions.png)
-
-###  DockerHub – Image Pushed
-![DockerHub](screenshots/dockerhub.png)
-
-###  Render.com – Live Deployment
-![Render](screenshots/render.png)
-
 ## Challenges Faced
 
 - **Render auto-deploy**: Render does not auto-redeploy when a new DockerHub image is pushed. Solved by using a Render deploy webhook triggered from GitHub Actions via `curl`.
